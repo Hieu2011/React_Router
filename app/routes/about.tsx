@@ -1,4 +1,4 @@
 export default function About() {
-  const age = '5'
+  const age = '54'
   return <div>about </div>
 }
