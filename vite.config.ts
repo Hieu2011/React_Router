@@ -6,7 +6,7 @@ import devtoolsJson from 'vite-plugin-devtools-json'
 
 export default defineConfig({
   server: {
-    port: 3000,
+    port: 5000,
     strictPort: true,
     watch: {
       ignored: [
@@ -21,7 +21,7 @@ export default defineConfig({
     devSourcemap: true
   },
   preview: {
-    port: 3000,
+    port: 5000,
     strictPort: true
   },
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths(), devtoolsJson()]
