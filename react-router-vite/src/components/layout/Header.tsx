@@ -1,6 +1,4 @@
-import { Link } from 'react-router'
-import { NAV_ITEMS } from '~/components/navigation/nav.config'
-import { ThemeToggle } from '~/components/theme/ThemeToggle'
+import { Link } from 'react-router-dom'
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -9,15 +7,16 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger
 } from '~/components/ui/navigation-menu'
+import { NAV_ITEMS } from '~/config/nav.config'
 import { cn } from '~/lib/utils'
 
-export function Header() {
+function Header() {
   return (
     <header className='sticky top-0 z-50 backdrop-blur bg-background/70 border-b'>
-      <div className='container h-14 flex items-center justify-between'>
+      <div className='container h-15 flex items-center justify-between'>
         <Link
           to='/'
-          className='font-bold text-xl bg-custom-color bg-clip-text text-transparent'
+          className='font-bold text-xl bg-gradient-primary bg-clip-text text-transparent'
         >
           RouterApp
         </Link>
@@ -77,9 +76,10 @@ export function Header() {
               ))}
             </NavigationMenuList>
           </NavigationMenu>
-          <ThemeToggle />
         </div>
       </div>
     </header>
   )
 }
+
+export default Header
