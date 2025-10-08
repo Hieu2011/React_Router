@@ -14,25 +14,25 @@ import {
 function Home() {
   return (
     <div className='container mx-auto py-6 sm:py-12'>
-      <div className='max-w-6xl mx-auto'>
+      <div className='mx-auto max-w-6xl'>
         {/* Hero Section */}
-        <div className='text-center mb-12 sm:mb-16'>
+        <div className='mb-12 text-center sm:mb-16'>
           <Badge variant='secondary' className='mb-4'>
             React Router + shadcn/ui
           </Badge>
-          <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-primary bg-clip-text text-transparent px-2'>
+          <h1 className='bg-gradient-primary mb-4 bg-clip-text px-2 text-3xl font-bold text-transparent sm:mb-6 sm:text-4xl md:text-5xl lg:text-6xl'>
             Modern React Setup
           </h1>
-          <p className='text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8 px-4'>
+          <p className='text-muted-foreground mx-auto mb-6 max-w-3xl px-4 text-base sm:mb-8 sm:text-lg md:text-xl'>
             A complete React Router setup with shadcn/ui components, TypeScript,
             Tailwind CSS, and ESLint. Everything you need to build beautiful,
             type-safe web applications.
           </p>
-          <div className='flex gap-3 sm:gap-4 justify-center flex-wrap px-4'>
+          <div className='flex flex-wrap justify-center gap-3 px-4 sm:gap-4'>
             <Link to='/about'>
               <Button
                 size='lg'
-                className='gap-2 shadow-elegant text-sm sm:text-base'
+                className='shadow-elegant gap-2 text-sm sm:text-base'
               >
                 Learn More
                 <ArrowRight className='h-4 w-4' />
@@ -50,10 +50,10 @@ function Home() {
         </div>
 
         {/* Features Grid */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-16'>
+        <div className='mb-12 grid grid-cols-1 gap-4 sm:mb-16 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3'>
           <Card className='hover:shadow-elegant transition-smooth'>
             <CardHeader className='p-4 sm:p-6'>
-              <Code2 className='h-6 w-6 sm:h-8 sm:w-8 text-primary mb-2' />
+              <Code2 className='text-primary mb-2 h-6 w-6 sm:h-8 sm:w-8' />
               <CardTitle className='text-lg sm:text-xl'>
                 TypeScript Ready
               </CardTitle>
@@ -66,7 +66,7 @@ function Home() {
 
           <Card className='hover:shadow-elegant transition-smooth'>
             <CardHeader className='p-4 sm:p-6'>
-              <Palette className='h-6 w-6 sm:h-8 sm:w-8 text-primary mb-2' />
+              <Palette className='text-primary mb-2 h-6 w-6 sm:h-8 sm:w-8' />
               <CardTitle className='text-lg sm:text-xl'>
                 Beautiful Design
               </CardTitle>
@@ -79,7 +79,7 @@ function Home() {
 
           <Card className='hover:shadow-elegant transition-smooth sm:col-span-2 lg:col-span-1'>
             <CardHeader className='p-4 sm:p-6'>
-              <Zap className='h-6 w-6 sm:h-8 sm:w-8 text-primary mb-2' />
+              <Zap className='text-primary mb-2 h-6 w-6 sm:h-8 sm:w-8' />
               <CardTitle className='text-lg sm:text-xl'>
                 Fast Navigation
               </CardTitle>
@@ -92,8 +92,8 @@ function Home() {
 
         {/* Call to Action */}
         <Card className='bg-gradient-primary text-primary-foreground'>
-          <CardHeader className='text-center p-4 sm:p-6'>
-            <CardTitle className='text-2xl sm:text-3xl mb-2'>
+          <CardHeader className='p-4 text-center sm:p-6'>
+            <CardTitle className='mb-2 text-2xl sm:text-3xl'>
               Ready to Explore?
             </CardTitle>
             <CardDescription className='text-primary-foreground/80 text-base sm:text-lg'>
@@ -101,8 +101,8 @@ function Home() {
               action.
             </CardDescription>
           </CardHeader>
-          <CardContent className='text-center p-4 sm:p-6 pt-0'>
-            <div className='flex gap-3 sm:gap-4 justify-center flex-wrap'>
+          <CardContent className='p-4 pt-0 text-center sm:p-6'>
+            <div className='flex flex-wrap justify-center gap-3 sm:gap-4'>
               <Link to='/team'>
                 <Button
                   variant='secondary'
@@ -116,7 +116,7 @@ function Home() {
                 <Button
                   variant='outline'
                   size='lg'
-                  className='bg-transparent border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 text-sm sm:text-base'
+                  className='border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent text-sm sm:text-base'
                 >
                   View Settings
                 </Button>

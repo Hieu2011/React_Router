@@ -7,5 +7,12 @@
   "useTabs": false,
   "singleQuote": true,
   "printWidth": 80,
-  "jsxSingleQuote": true
+  "jsxSingleQuote": true,
+  "trimTrailingWhitespace": true,
+  "insertFinalNewline": true,
+  "bracketSpacing": true,
+  "bracketSameLine": false,
+  "plugins": [
+    "prettier-plugin-tailwindcss"
+  ]
 }

@@ -1,12 +1,12 @@
-import Footer from '~/components/layout/footer'
-import Header from '~/components/layout/header'
-import Home from '~/components/layout/home'
+import Footer from '~/components/layout/Footer'
+import Header from '~/components/layout/Header'
+import Home from '~/components/layout/Home'
 
 const Index = () => {
   return (
-    <div className='min-h-dvh flex flex-col'>
+    <div className='flex min-h-dvh flex-col'>
       <Header />
-      <main className='flex-1 container mx-auto px-4 pb-12 pt-8 space-y-16'>
+      <main className='container mx-auto flex-1 space-y-16 px-4 pt-8 pb-12'>
         <Home />
       </main>
       <Footer />

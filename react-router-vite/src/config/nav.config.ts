@@ -5,7 +5,9 @@ import {
   Settings,
   FileText,
   Kanban,
-  BarChart3
+  BarChart3,
+  BookOpenCheck,
+  PawPrint
 } from 'lucide-react'
 
 interface BaseNav {
@@ -30,9 +32,15 @@ export type NavItem = NavLeaf | NavGroup
 export const NAV_ITEMS: NavItem[] = [
   {
     title: 'Dashboard',
-    href: '/',
+    href: '/Dashboard',
     description: 'Overview and main dashboard',
     icon: LayoutDashboard
+  },
+  {
+    title: 'Categories',
+    href: '/Categories',
+    description: 'Categories management',
+    icon: PawPrint
   },
   {
     title: 'Projects',
@@ -45,11 +53,47 @@ export const NAV_ITEMS: NavItem[] = [
       },
       {
         title: 'Analytics',
-        href: '/demo',
+        href: '/analytics',
         description: 'Charts and data visualization',
         icon: BarChart3
+      },
+      {
+        title: 'Reports',
+        href: '/reports',
+        description: 'Generate and view reports',
+        icon: FileText
+      },
+      {
+        title: 'Documentation',
+        href: '/docs',
+        description: 'Project documentation and guides',
+        icon: BookOpenCheck
+      },
+      {
+        title: 'Documentation2',
+        href: '/docs',
+        description: 'Project documentation and guides',
+        icon: BookOpenCheck
+      },
+      {
+        title: 'Documentation3',
+        href: '/docs',
+        description: 'Project documentation and guides',
+        icon: BookOpenCheck
+      },
+      {
+        title: 'Documentation4',
+        href: '/docs',
+        description: 'Project documentation and guides',
+        icon: BookOpenCheck
       }
     ]
+  },
+  {
+    title: 'Demo',
+    href: '/Demo',
+    description: 'Demo management',
+    icon: PawPrint
   },
   {
     title: 'Team',
